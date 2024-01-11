@@ -4,6 +4,6 @@ RUN apk add --no-cache wget
 
 RUN wget https://api.modpacks.ch/public/modpack/100/6967/server/linux
 
-RUN mkdir -p /minecraft/ && chmod +x linux && ./linux --auto --path /minecraft/
+RUN mkdir -p /minecraft/ && chmod +x linux && ./linux 100 6967 --auto --path /minecraft/
 
 RUN ls /minecraft/
