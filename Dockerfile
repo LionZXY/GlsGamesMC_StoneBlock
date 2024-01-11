@@ -6,7 +6,7 @@ RUN wget https://api.modpacks.ch/public/modpack/100/6967/server/linux
 
 RUN mkdir -p /minecraft/ && chmod +x linux && ./linux 100 6967 --auto --path /minecraft/
 
-RUN ls /minecraft/
-RUN cat user_jvm_args.txt
+COPY user_jvm_args.txt /minecraft/user_jvm_args.txt
+COPY eula.txt /minecraft/eula.txt
 
 CMD /minecraft/start.sh
