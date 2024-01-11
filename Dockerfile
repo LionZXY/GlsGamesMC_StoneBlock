@@ -9,4 +9,4 @@ RUN mkdir -p /minecraft/ && chmod +x linux && ./linux 100 6967 --auto --path /mi
 COPY user_jvm_args.txt /minecraft/user_jvm_args.txt
 COPY eula.txt /minecraft/eula.txt
 
-CMD /minecraft/start.sh
+CMD cd /minecraft/ && ./start.sh

@@ -1,6 +1,6 @@
 services:
   mc_gtnh:
-    image: glitchless/gli_mc_stoneblock:18
+    image: glitchless/gli_mc_stoneblock:3
     restart: unless-stopped
     ports:
       - "25568:25565"
