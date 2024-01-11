@@ -1,0 +1,9 @@
+services:
+  mc_gtnh:
+    image: glitchless/gli_mc_gtnh:18
+    restart: unless-stopped
+    ports:
+      - "25568:25565"
+    volumes:
+      - ./worlds:/app/worlds
+      - ./logs:/app/logs
